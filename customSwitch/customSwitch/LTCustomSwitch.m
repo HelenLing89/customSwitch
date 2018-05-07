@@ -7,10 +7,10 @@
 //
 
 #import "LTCustomSwitch.h"
-#define LQXSwitchMaxHeight 80.0f
-#define LQXSwitchMinHeight 20.0f
+#define LTSwitchMaxHeight 80.0f
+#define LTSwitchMinHeight 20.0f
 
-#define LQXSwitchMinWidth 40.0f
+#define LTSwitchMinWidth 40.0f
 @interface LTCustomSwitch()
 
 @property (nonatomic, strong) UIView *containerView;
@@ -370,16 +370,16 @@
 {
     CGRect newRect = frameOrBounds;
     
-    if (newRect.size.height > LQXSwitchMaxHeight) {
-        newRect.size.height = LQXSwitchMaxHeight;
+    if (newRect.size.height > LTSwitchMaxHeight) {
+        newRect.size.height = LTSwitchMaxHeight;
     }
     
-    if (newRect.size.height < LQXSwitchMinHeight) {
-        newRect.size.height = LQXSwitchMinHeight;
+    if (newRect.size.height < LTSwitchMinHeight) {
+        newRect.size.height = LTSwitchMinHeight;
     }
     
-    if (newRect.size.width < LQXSwitchMinWidth) {
-        newRect.size.width = LQXSwitchMinWidth;
+    if (newRect.size.width < LTSwitchMinWidth) {
+        newRect.size.width = LTSwitchMinWidth;
     }
     
     return newRect;
