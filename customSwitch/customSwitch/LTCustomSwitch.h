@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LTCustomSwitch : UIView
+@interface LTCustomSwitch : UIControl
 @property (nonatomic,strong) NSString *onText;
 @property (nonatomic,strong) NSString *offText;
 @property (nonatomic,strong) UIColor *onTintColor;

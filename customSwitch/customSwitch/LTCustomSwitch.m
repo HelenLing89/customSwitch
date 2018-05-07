@@ -298,7 +298,7 @@
         }
     }
     
-   // [self sendActionsForControlEvents:UIControlEventValueChanged];
+    [self sendActionsForControlEvents:UIControlEventValueChanged];
 }
 
 #pragma mark - Private API

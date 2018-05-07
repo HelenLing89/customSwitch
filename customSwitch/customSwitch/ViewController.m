@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "LTCustomSwitch.h"
 @interface ViewController ()
+@property (nonatomic,strong) LTCustomSwitch *switchView;
 
 @end
 
@@ -23,14 +24,19 @@
     switchView.leftThumbTintColor = [UIColor colorWithWhite:0.8 alpha:1];
     switchView.rightThumbTintColor = [UIColor whiteColor];
     switchView.borderColor = [UIColor colorWithWhite:0.8 alpha:1];
+    self.switchView = switchView;
     [self.view addSubview:switchView];
+    [switchView addTarget:self action:@selector(changeValue:) forControlEvents:UIControlEventValueChanged];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)change:(UISwitch *)switch1{
+    NSLog(@"%s",__func__);
+    
 }
-
+- (void)changeValue:(LTCustomSwitch *)switchView{
+    
+    
+    NSLog(@"%s",__func__);
+}
 
 @end
