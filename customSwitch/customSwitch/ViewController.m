@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     LTCustomSwitch *switchView = [[LTCustomSwitch alloc]initWithFrame:CGRectMake(80, 100, 65, 30) onColor:[UIColor clearColor] offColor:[UIColor grayColor] font:[UIFont systemFontOfSize:15] leftBallSize:10 rightBallSize:20];
+    
     switchView.backgroundColor = [UIColor greenColor];
     switchView.tintColor = [UIColor clearColor];
     switchView.onTintColor = [UIColor colorWithWhite:0.8 alpha:1];
